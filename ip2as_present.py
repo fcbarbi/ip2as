@@ -17,8 +17,6 @@ Present Traffic data classified by ASN and entity
 import pandas as pd
 import matplotlib.pyplot as plt
 import random  # debug only
-#import os
-#plt.savefig( os.getcwd()+'\\'+str(local_asn)+'_fig1.svg')
 
 def Report( traff, local_asn ):
 

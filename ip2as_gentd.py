@@ -22,12 +22,6 @@ from ipaddr import IPNetwork
 from ipaddr import IPAddress
 
 from ip2as_functions import *
-# from ip2as_functions import isIPv4
-# from ip2as_functions import LoadCidrTable
-# from ip2as_functions import LoadRirTable
-# from ip2as_functions import local_asn
-# from ip2as_functions import ournets4
-# from ip2as_functions import ournets6
 
 # external networks
 c4,c6 = {},{}

@@ -11,24 +11,6 @@ import unittest
 from ip2as_functions import *
 from ipaddr import IPNetwork
 
-# from ip2as_functions import isIPv4
-# from ip2as_functions import HashKey
-# from ip2as_functions import validCidr
-# from ip2as_functions import LoadCidrTable
-# from ip2as_functions import LoadRirTable
-# from ip2as_functions import LoadAsnTable
-# from ip2as_functions import LookupIp
-# from ip2as_functions import getCidrAsn
-
-# from ip2as_functions import CIDR_file
-# from ip2as_functions import RIR_file
-# from ip2as_functions import ASN_file
-# from ip2as_functions import UNKNOWN
-# from ip2as_functions import DOMESTIC
-# from ip2as_functions import INTERNATIONAL
-# from ip2as_functions import RESERVED
-# from ip2as_functions import BADASN
-
 # Used in LoadXXXTable() to require the use of hard coded data
 bDebug = True # True to debug using hard coded data
 
@@ -54,6 +36,16 @@ class TestClass(unittest.TestCase):
         self.TestCidr( '2001:12c8::1234','2001:12c8::1234/128',128,False )
         self.TestCidr( '2002::/16','2002::/16',16,False )
         self.TestCidr( '::/129','::/128',128,False )
+
+        self.assertEqual( dt2slot( '11/08/2014 0:0:3.2345'   , BAR60min ), 0    )
+        self.assertEqual( dt2slot( '11/08/2014 1:2:3'        , BAR60min ), 1    )
+        self.assertEqual( dt2slot( '11/08/2014 23:59:59.2345', BAR60min ), 23   )
+        self.assertEqual( dt2slot( '11/08/2014 0:0:3.2345'   , BAR10min ), 0    )
+        self.assertEqual( dt2slot( '11/08/2014 1:2:3'        , BAR10min ), 6    )
+        self.assertEqual( dt2slot( '11/08/2014 23:59:59.2345', BAR10min ), 143  )
+        self.assertEqual( dt2slot( '11/08/2014 0:0:3.2345'   , BAR01min ), 0    )
+        self.assertEqual( dt2slot( '11/08/2014 23:59:59.2345', BAR01min ), 1439 ) # 24*60-1
+
 
 def TestFunctions():
     """ TestFunctions() test basic functions, should be called first to validate routines used everywhere\n
@@ -173,7 +165,7 @@ def TestAll( bDebug ):
 if __name__=="__main__":
 
     # test basic functions
-    #TestFunctions()
+    TestFunctions()
 
     # test table load with hard coded data
     print '--------------------\n TestTables() with hard coded data'

@@ -461,12 +461,6 @@ def getCidrAsn( sIp, cidr_table, net_masks, local_resources ):
     return ( sCidr,iAsn )
 
 # #####################################################
-# AggregateTrafficTable = AggregateTraffic( iTimeWindow,TrafficTable )
-# TtrafficTable: datetime,load,ent_src,ent_dest#
-#  AggregateTtrafficTable: datetime,load,ent_src,ent_dest
-#
-
-# #####################################################
 def str2datetime( sDateTime ):
     """ str2datetime( sDateTime ) converts a string to a datetime object suppressing miliseconds
 
@@ -478,25 +472,18 @@ def str2datetime( sDateTime ):
     # _dt = datetime.datetime.now().replace( microsecond=0 )
     return datetime( _dt.tm_year, _dt.tm_mon, _dt.tm_mday, _dt.tm_hour, _dt.tm_min , _dt.tm_sec )
 
-def getDate( sDatetime ):
-    """ (year, month, day) = getDate( sDatetime )
-    """
-    _time = sDatetime.split('.')  # get rid of miliseconds
-    _dt = strptime( _time[0], "%m/%d/%Y %H:%M:%S" )
-    return ( _dt.tm_year, _dt.tm_mon, _dt.tm_mday,0,0,0 )
+# def getDate( sDatetime ):
+#     """ (year, month, day) = getDate( sDatetime )
+#     """
+#     _time = sDatetime.split('.')  # get rid of miliseconds
+#     _dt = strptime( _time[0], "%m/%d/%Y %H:%M:%S" )
+#     return ( _dt.tm_year, _dt.tm_mon, _dt.tm_mday,0,0,0 )
 
 def dt2slot( sDatetime, iDelta ):
+    """ timeslot = dt2slot( sDatetime, iDelta ) where iDelta is the bar length measured in seconds (eg. DELTA60 for 1 hour)
+
+    A 'timeslot' is an integer used to store the packet in a dataframe for later aggregation/visualization.
     """
-    timeslot = dt2slot( sDatetime, iDelta ) where iDelta is the bar length measured in seconds (eg. DELTA60 for 1 hour)
-    """
-#    assert dt2slot( '11/08/2014 0:0:3.2345'   , BAR60min ) == 0
-#    assert dt2slot( '11/08/2014 1:2:3'        , BAR60min ) == 1
-#    assert dt2slot( '11/08/2014 23:59:59.2345', BAR60min ) == 23
-#    assert dt2slot( '11/08/2014 0:0:3.2345'   , BAR10min ) == 0
-#    assert dt2slot( '11/08/2014 1:2:3'        , BAR10min ) == 6
-#    assert dt2slot( '11/08/2014 23:59:59.2345', BAR10min ) == 143
-#    assert dt2slot( '11/08/2014 0:0:3.2345'   , BAR01min ) == 0
-#    assert dt2slot( '11/08/2014 23:59:59.2345', BAR01min ) == 24*60-1 = 1439
 
     _time = sDatetime.split('.')  # get rid of miliseconds
     _dt = strptime( _time[0], "%m/%d/%Y %H:%M:%S" )
