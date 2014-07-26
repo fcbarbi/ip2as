@@ -213,22 +213,8 @@ def GenTestData( iHours,sDate,sFileName ):
     f.close()
     print 'simulated data file generated'
 
-def Grafico():
-
-    # traffic = []
-    # for i in xrange(240):
-    #     traffic.append( (i,ramdon.randint(0,100) ) );
-    #     matplotlib.pyplot.plot( traffic )
-
-    #import matplotlib
-    #matplotlib.use('pdf')
-
-    plt.plot(randn(30).cumsum(), color='k', linestyle='dashed', marker='o')
-    plt.show()
-
 if __name__=="__main__":
     GenTestData( HOURS, DATE, FILENAME )
-    #Grafico()
 
 
 

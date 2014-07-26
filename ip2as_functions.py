@@ -2,7 +2,7 @@
 # ip2as_functions.py
 # Functions for project ip2asn
 #
-# Author: fcbarbi dot gmail.com
+# Author: fcbarbi at gmail.com
 # update July 2014
 #
 # boolean = isIPv4( sIp )
