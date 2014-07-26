@@ -1,0 +1,72 @@
+asn,entity
+
+-1,DOMESTIC,(Brazilian network)
+-2,INTERNATIONAL,(Unclassified network)
+-3,RESERVED,(Reserved network address should not be used)
+
+ 4230,Embratel,EMBRATEL-EMPRESA BRASILEIRA DE TELECOMUNICACOES SA
+27652,Embratel,Embratel (StartOne)
+20266,Embratel,Embratel (Vesper)
+28573,Net,Net Servicos S/A
+
+ 8167,Oi,Brasil Telecom S/A - Filial Distrito Federal
+13591,Oi,Brasil Telecom Comunicacao Multimidia
+ 7738,Oi,Telemar Norte Leste S.A.
+
+19182,Telefonica,TELEFONICA BRASIL S.A (TVA)
+27699,Telefonica,TELEFONICA BRASIL S.A (Speedy)
+10429,Telefonica,Telefonica Data S.A.
+11419,Telefonica,Telefonica Data S.A.
+12956,Telefonica,Telefonica International
+11706,Terra,Terra Networks Brasil S.A.
+
+16397,Alog,ALOG SOLUCOES DE TECNOLOGIA EM INFORMATICA S.A.
+26592,Alog,ALOG SOLUCOES DE TECNOLOGIA EM INFORMATICA S.A.
+
+16685,Tivit,TIVIT TECNOLOGIA DA INFORMACAO S.A.
+19089,Dedalus,DH&C Outsourccing S/A.
+27715,LocaWeb,Locaweb Serviços de Internet S/A
+28625,Terremark,Terremark do Brasil Ltda.
+
+15201,Uol,Universo Online S.A.
+18479,Uol,Universo Online S.A.(Plug-In)
+
+18881,Gvt,Global Village Telecom 
+17379,Intelig,Intelig Telecomunicacoes Ltda
+26615,Tim,Tim Celular S.A.
+15256,Itau,Banco Itau S.A.
+21911,Dualtec,Dualtec Informatica Ltda.
+53091,Nomer,Nomer Registro de dominio e hosp. de sites Ltda
+14457,Radins,Radins Tecnologia LTDA ME
+262805,RedeMinas,REDE MINAS TELECOM LTDA
+14868,Copel,COPEL Telecom S.A.
+16735,Ctbc,COMPANHIA DE TELECOMUNICACOES DO BRASIL CENTRAL
+22356,Durand,Durand do Brasil Ltda
+25933,Sulamericana,Sul Americana Tecnologia e Informática Ltda.
+28135,Anid,ASSOCIAÇÃO NACIONAL PARA INCLUSÃO DIGITAL - ANID
+28207,Teleon,Teleon Telecomunicaçoes Ltda
+28220,Cabo,CABO SERVICOS DE TELECOMUNICACOES LTDA
+28233,Iconecta,I-CONECTA REDES DE TELECOMUNICACAO LTDA EPP
+28343,Tpa,TPA TELECOMUNICACOES LTDA
+28347,Unotel, Unotel Telecomunicacoes Ltda
+28368,Infoway,Infoway
+28580,Cilnet,CILNET Comunicacao e Informatica LTDA.
+28624,Oops,Oops Telecom
+
+15169,Google,Google Inc.
+16591,Google,Google Inc. 
+36040,Google,Google Inc. 
+36492,Google,Google Inc.
+26910,Google, Postini - Google Inc.
+
+3356,Level3,Level 3 Communications Inc.
+3549,Level3,Level 3 Communications Inc (GBLX)
+
+6453,Tata,TATA Communications (America) Inc.
+174,Cogent, Cogent Communications
+2914,Ntt,NTT America Inc.
+3257,Tinet,Tinet SpA
+1299,TeliaSonera,TeliaSonera International Carrier
+3320,Deutsche,Deutsche Telekom AG
+6939,Hurricane,Hurricane Electric, Inc.
+35994,Akamai,Akamai Technologies, Inc.
